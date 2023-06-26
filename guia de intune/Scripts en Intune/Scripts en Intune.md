@@ -22,7 +22,7 @@ Al pulsar el botón de agregar, aparecerán tres opciones para seleccionar.
 
 ##  **Windows 10 y versiones posteriores**
   Cuando pulsemos en "Windows 10 y versiones posteriores" tenemos que seguir 4 pasos que son: 
-  1. [Básico](#basico)
+  1. [Básico](#1-básico-basico)
   2. [Configuración de script](#configuracion-de-script)
   3. [Asignaciones](#asignaciones)
   4. [Revisar y agregar](#revisar-y-agregar)
