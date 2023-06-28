@@ -1,3 +1,7 @@
+**Scripts**
+===
+Aquí explicare que hacen los scripts:
+
 ## botonWordDinaiz.ps1
 
 este script es para crear el boton que habilita los scripts en word
@@ -17,7 +21,6 @@ La ruta de la configuracion esta en:
 C:\Users\$username\AppData\Local\Microsoft\Office\Word.officeUI
 ```
  ## excelComplemento(NO FUNCIONA).ps1
-
  este script no funciona y no entiendo por que.
 
  ## fondoTeams.ps1
