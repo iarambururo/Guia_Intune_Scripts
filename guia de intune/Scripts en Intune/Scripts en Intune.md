@@ -22,10 +22,10 @@ Al pulsar el botón de agregar, aparecerán tres opciones para seleccionar.
 
 ##  **Windows 10 y versiones posteriores**
   Cuando pulsemos en "Windows 10 y versiones posteriores" tenemos que seguir 4 pasos que son: 
-  1. [Básico](#1-básico-basico)
-  2. [Configuración de script](#2-configuración-de-script-configuracion-de-script)
-  3. [Asignaciones](#3-asignaciones-asignaciones)
-  4. [Revisar y agregar](#revisar-y-agregar)
+  1. [Básico](#1-básico)
+  2. [Configuración de script](#2-configuración-de-script)
+  3. [Asignaciones](#3-asignaciones)
+  4. [Revisar y agregar](#4-revisar-y-agregar)
   ### 1. Básico
  En este paso simplemente hay que meter el nombre para identificar el script junto a una descripción opcional.
  
