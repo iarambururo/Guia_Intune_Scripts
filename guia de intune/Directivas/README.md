@@ -68,3 +68,5 @@ OneDrive_ Etiquetas_de_ambito.png
 
 
 OneDrive_Tareas.png
+
+OneDrive_Resumen.png
