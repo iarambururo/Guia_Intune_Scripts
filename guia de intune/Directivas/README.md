@@ -63,7 +63,8 @@ Esta configuración te permite controlar si se habilita OneDrive Archivos bajo d
 
 
 
+OneDrive_ Etiquetas_de_ambito.png
 
 
 
-
+OneDrive_Tareas.png
