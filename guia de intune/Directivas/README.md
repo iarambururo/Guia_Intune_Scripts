@@ -2,7 +2,7 @@ Dispositivos | Configuración
 https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration
 
 ## ONE DRIVE
-
+<div style="text-align: justify">
 Para lograr la sincronización automática de OneDrive, es necesario aplicar las directivas. Para crear una directiva, accedemos al enlace ubicado en la parte superior y seleccionamos la opción "Crear Perfil".
 
 ![crearDirectiva](img/OneDrive_crearDirectiva.png)
@@ -80,3 +80,7 @@ Aquí, solo podremos asignar las directivas a grupos y no a usuarios específico
 Al final del proceso, se mostrará un resumen detallado de todas las configuraciones realizadas.
 
 ![Resumen](img/OneDrive_Resumen.png)
+
+
+Tu texto aquí.
+</div>
