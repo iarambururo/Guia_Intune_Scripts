@@ -4,9 +4,14 @@ https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu
 ## ONE DRIVE
 
 Para lograr la sincronización automática de OneDrive, es necesario aplicar las directivas. Para crear una directiva, accedemos al enlace ubicado en la parte superior y seleccionamos la opción "Crear Perfil".
+
 ![crearDirectiva](img/OneDrive_crearDirectiva.png)
-Al seleccionar "Crear Perfil", aparecerá una ventana emergente en la cual debemos especificar los siguientes detalles: en el campo **Plataforma**, elegiremos "Windows 10 y versiones posteriores", y en el campo **Tipo de perfil**, seleccionaremos "Catálogo de configuración".
+
+Al seleccionar "Crear Perfil", aparecerá una ventana emergente en la cual debemos especificar los siguientes detalles: 
+
+en el campo **Plataforma**, elegiremos "Windows 10 y versiones posteriores", y en el campo **Tipo de perfil**, seleccionaremos "Catálogo de configuración".
 ![CrearUnPerfil](img/OneDrive_CrearUnPerfil.png)
+
 Una vez que hayamos configurado estas opciones, hacemos clic en "Crear" y pasaremos a la siguiente pantalla.
 
 En esta etapa, ingresamos el nombre con el que deseamos identificar la directiva y proporcionamos una breve descripción.
@@ -40,13 +45,14 @@ Esta configuración permite la sincronización automática de las carpetas de Es
 
 ![Silently move](img/OneDrive_Silently_move.png)
 
-Es importante poner el Tenant ID para la sincronizacion ya que si no no se van a sincronizar las carpetas.
+Es importante poner el Tenant ID para la sincronizacion ya que si no, no se van a sincronizar las carpetas.
+
 
 ## Silently sign in users to the OneDrive sync app with their Windows credentials
 
 Esta configuración te permite iniciar sesión de forma silenciosa a los usuarios en la aplicación de sincronización de OneDrive (OneDrive.exe) con sus credenciales de Windows. Si habilitas esta configuración, los usuarios que hayan iniciado sesión en el PC con la cuenta principal de Windows (la cuenta utilizada para unir el PC al dominio) podrán configurar la aplicación de sincronización sin tener que ingresar las credenciales de la cuenta. Los usuarios aún verán la configuración inicial de OneDrive para que puedan seleccionar las carpetas a sincronizar y cambiar la ubicación de su carpeta de OneDrive. Si un usuario está utilizando la aplicación de sincronización anterior de OneDrive for Business (Groove.exe), la nueva aplicación de sincronización intentará tomar el control de la sincronización de OneDrive del usuario desde la aplicación anterior y conservar los ajustes de sincronización del usuario. Esta configuración se utiliza con frecuencia junto con "Establecer el tamaño máximo de descarga automática de OneDrive para un usuario" en PC que no tienen "Archivos bajo demanda" y "Establecer la ubicación predeterminada de la carpeta de OneDrive". Si deshabilitas o no configuras esta configuración, los usuarios deberán iniciar sesión con su cuenta de trabajo o de estudios para configurar la sincronización.
 
-### Allow syncing OneDrive accounts for only specific organizations. (no es indispensable)
+## Allow syncing OneDrive accounts for only specific organizations. (no es indispensable)
 
 Esta configuración te permite evitar que los usuarios suban fácilmente archivos a otras organizaciones al especificar una lista de ID de inquilinos permitidos. Si habilitas esta configuración, los usuarios recibirán un error si intentan agregar una cuenta de una organización no permitida. Si un usuario ya ha agregado la cuenta, los archivos dejarán de sincronizarse. Si deshabilitas o no configuras esta configuración, los usuarios podrán agregar cuentas de cualquier organización. Para bloquear organizaciones específicas, utiliza "Bloquear la sincronización de cuentas de OneDrive para organizaciones específicas". Esta configuración tendrá prioridad sobre "Bloquear la sincronización de cuentas de OneDrive para organizaciones específicas". No habilites ambas políticas al mismo tiempo.
 
@@ -63,10 +69,13 @@ Esta configuración te permite controlar si se habilita OneDrive Archivos bajo d
 
 
 
-OneDrive_ Etiquetas_de_ambito.png
+------
+Una vez que hayamos completado la configuración, procedemos a hacer clic en "Siguiente" hasta que lleguemos a la sección de Tareas.
 
+Aquí, solo podremos asignar las directivas a grupos y no a usuarios específicos.
 
+![Tareas](img/OneDrive_Tareas.png)
 
-OneDrive_Tareas.png
+Al final del proceso, se mostrará un resumen detallado de todas las configuraciones realizadas.
 
-OneDrive_Resumen.png
+![Resumen](img/OneDrive_Resumen.png)
