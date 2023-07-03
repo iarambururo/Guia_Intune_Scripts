@@ -2,7 +2,7 @@ Dispositivos | Configuración
 https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration
 
 ## ONE DRIVE
-<div style="text-align: justify">
+
 Para lograr la sincronización automática de OneDrive, es necesario aplicar las directivas. Para crear una directiva, accedemos al enlace ubicado en la parte superior y seleccionamos la opción "Crear Perfil".
 
 ![crearDirectiva](img/OneDrive_crearDirectiva.png)
@@ -81,6 +81,40 @@ Al final del proceso, se mostrará un resumen detallado de todas las configuraci
 
 ![Resumen](img/OneDrive_Resumen.png)
 
+## OneDrive Sharepoint 
 
-Tu texto aquí.
-</div>
+A continuación, se explicará cómo configurar automáticamente una unidad de SharePoint utilizando las directivas de Intune.
+
+**¡¡¡¡¡¡ ADVERTENCIA !!!!!!!**
+
+lo primero que hay que saber es que por razones que desconozco estas directivas dardan 8 horas en aplicarse desde el que el usuario inicia sesion en el equipo.
+
+luego explicare una manera de hacelerar la aplicacion de esta directiva.
+
+lo primero que tenemos que hacer es ir a nuestro directorio de sharepoit que queremos sincronizar y pulsar en sincronizar pero sin sincronizar el directorio, lo que queremos es que salga el siguiente mensaje 
+
+![CrearUnPerfil](img/SharePoint_Sincronizar.png)
+
+Una vez aparezca dicho mensaje, se debe hacer clic en "Identificador de biblioteca" para copiar el código.
+
+Posteriormente, se procede a crear otra directiva, esta vez seleccionando el "Tipo de perfil" como "Plantillas". Dentro de las plantillas, se busca "Plantillas Administrativas".
+
+![SharePoint_Plantillas](img/SharePoint_Plantillas.png)
+
+los primeros pasos son los mismos que en el paso anterior el cambio lo veremos cuando lleguemos a esta parte.
+
+![SharePoint_Directiva](img/SharePoint_Directiva.png)
+aqui tenemos que buscar "Configurar bibliotecas del sitio de grupo para realizar la sincronización automática" es inportante que en tipo de configuracion ponga "Usuario" 
+
+Al habilitar la configuración, notaremos que aparecerán dos campos debajo, denominados "Nombre" y "Valor". En el campo "Nombre", debemos ingresar un identificador descriptivo (este nombre no será el que se mantenga en la biblioteca). En el campo "Valor", pegaremos el "Identificador de biblioteca" que previamente hemos copiado.
+
+![Habilitado](img/SharePoint_Habilitado.png)
+
+Una vez completado este paso, simplemente hacemos clic en "OK" y seguimos los pasos anteriores para asignar esta configuración a grupos de usuarios.
+
+### Como acelerar el proceso
+
+
+
+## Wi-Fi
+
