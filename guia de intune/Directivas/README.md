@@ -10,6 +10,7 @@ Para lograr la sincronización automática de OneDrive, es necesario aplicar las
 Al seleccionar "Crear Perfil", aparecerá una ventana emergente en la cual debemos especificar los siguientes detalles: 
 
 en el campo **Plataforma**, elegiremos "Windows 10 y versiones posteriores", y en el campo **Tipo de perfil**, seleccionaremos "Catálogo de configuración".
+
 ![CrearUnPerfil](img/OneDrive_CrearUnPerfil.png)
 
 Una vez que hayamos configurado estas opciones, hacemos clic en "Crear" y pasaremos a la siguiente pantalla.
