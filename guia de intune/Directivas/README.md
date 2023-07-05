@@ -1,6 +1,14 @@
 Dispositivos | Configuración
 https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration
 
+## Indice
+- [ONE DRIVE](one-drive)
+- [OneDrive Sharepoint](onedrive-sharepoint)
+    - [Acelerar el proceso de sincronizacion](acelerar-el-proceso-de-sincronizacion)
+- [Wifi](wi-fi)
+
+
+
 ## ONE DRIVE
 
 Para lograr la sincronización automática de OneDrive, es necesario aplicar las directivas. Para crear una directiva, accedemos al enlace ubicado en la parte superior y seleccionamos la opción "Crear Perfil".
@@ -112,7 +120,7 @@ Al habilitar la configuración, notaremos que aparecerán dos campos debajo, den
 
 Una vez completado este paso, simplemente hacemos clic en "OK" y seguimos los pasos anteriores para asignar esta configuración a grupos de usuarios.
 
-### Como acelerar el proceso
+### Acelerar el proceso de sincronizacion
 
 Para agilizar el proceso de sincronización, se utiliza un script de PowerShell llamado Sync-SharepointFolder.ps ubicado en la carpeta Scripts. Este script ha sido tomado prestado de https://github.com/tabs-not-spaces/CodeDump/blob/master/Sync-SharepointFolder/Sync-SharepointFolder.ps1. Al ejecutar este script, se sincronizará automáticamente la carpeta de SharePoint deseada.
 
@@ -149,3 +157,12 @@ el paquete que nos interesa es el que empieza por **sync** si hacemos click en e
 
 ## Wi-Fi
 
+Para poder aplicar las credenciales de Wi-Fi tenemos que crear una nueva directiva de tipo Plantilla y selecionar Wi-Fi
+![Wi-Fi_crear](img/Wi-Fi_perfil.png)
+
+al darle a crear el proceso es el mismo de siempre hasra llegar aqui
+![Credencialesl](img/Wi-Fi_Credencialesl.png)
+
+aqui se aplican las configuraciones queremos aplicar y las credenciales del Wi-Fi.
+
+Despues de esta pestaña todas las demas son igual que en los pasos anteriores.
