@@ -3,15 +3,24 @@
 # **Directivas**
 <span style="text-align: justify">
 En este documento, se proporciona una guía para configurar diferentes aspectos en los dispositivos utilizando las herramientas y directivas de Microsoft Intune. Se abordarán tres áreas principales: OneDrive, SharePoint y Wi-Fi.
+</span>
 
+<span style="text-align: justify">
 La sección de OneDrive explora cómo lograr la sincronización automática de OneDrive mediante la creación de perfiles de configuración. Se detallará el proceso de configuración de opciones clave, como la sincronización automática de carpetas conocidas de Windows y la autenticación silenciosa de usuarios.
+</span>
 
+<span style="text-align: justify">
 En la sección de SharePoint, se explicará cómo configurar automáticamente la sincronización de una biblioteca de SharePoint utilizando directivas de Intune. Además, se proporcionará una manera de acelerar el proceso de sincronización utilizando un script de PowerShell.
+</span>
 
+<span style="text-align: justify">
 Por último, se abordará la configuración de Wi-Fi, donde se mostrará cómo aplicar las credenciales y configuraciones de red a través de directivas de Intune.
+</span>
 
+<span style="text-align: justify">
 A través de estas instrucciones detalladas, podrás optimizar la configuración de tus dispositivos y aprovechar al máximo las capacidades Microsoft Intune
 </span>
+
 ## Indice
 - [ONE DRIVE](#one-drive)
 - [OneDrive Sharepoint](#onedrive-sharepoint)
