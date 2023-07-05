@@ -2,10 +2,10 @@ Dispositivos | Configuración
 https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration
 
 ## Indice
-- [ONE DRIVE](one-drive)
-- [OneDrive Sharepoint](onedrive-sharepoint)
-    - [Acelerar el proceso de sincronizacion](acelerar-el-proceso-de-sincronizacion)
-- [Wifi](wi-fi)
+- [ONE DRIVE](#one-drive)
+- [OneDrive Sharepoint](#onedrive-sharepoint)
+    - [Acelerar el proceso de sincronizacion](#acelerar-el-proceso-de-sincronizacion)
+- [Wifi](#wi-fi)
 
 
 
