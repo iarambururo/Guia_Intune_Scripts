@@ -1,6 +1,6 @@
 
 
-**Introducción: Configuración de Dispositivos**
+# **Directivas**
 
 En este documento, se proporciona una guía para configurar diferentes aspectos en los dispositivos utilizando las herramientas y directivas de Microsoft Intune. Se abordarán tres áreas principales: OneDrive, SharePoint y Wi-Fi.
 
