@@ -15,7 +15,7 @@ A través de estas instrucciones detalladas, podrás optimizar la configuración
 ## Indice
 - [ONE DRIVE](#one-drive)
 - [OneDrive Sharepoint](#onedrive-sharepoint)
-    - [Acelerar el proceso de sincronizacion](#acelerar-el-proceso-de-sincronizacion)
+    - [Acelerar el proceso de sincronización](#acelerar-el-proceso-de-sincronizacion)
 - [Wifi](#wi-fi)
 
 
@@ -28,9 +28,9 @@ Para lograr la sincronización automática de OneDrive, es necesario aplicar las
 
 ![crearDirectiva](img/OneDrive_crearDirectiva.png)
 
-Al seleccionar "Crear Perfil", aparecerá una ventana emergente en la cual debemos especificar los siguientes detalles: 
+Al seleccionar "Crear Perfil", se abrirá una ventana emergente en la cual se deben especificar los siguientes detalles: 
 
-en el campo **Plataforma**, elegiremos "Windows 10 y versiones posteriores", y en el campo **Tipo de perfil**, seleccionaremos "Catálogo de configuración".
+En el campo **Plataforma**, se debe elegir "Windows 10 y versiones posteriores", y en el campo **Tipo de perfil**, se seleccionará "Catálogo de configuración".
 
 ![CrearUnPerfil](img/OneDrive_CrearUnPerfil.png)
 
@@ -39,12 +39,12 @@ Una vez que hayamos configurado estas opciones, hacemos clic en "Crear" y pasare
 En esta etapa, ingresamos el nombre con el que deseamos identificar la directiva y proporcionamos una breve descripción.
 ![OneDrive_nombrePerfil](img/OneDrive_nombrePerfil.png)
 
-ahora tenemos que pulsar en  **Agregar configuración** y buscar "OneDrive" en el buscador
+Ahora es necesario hacer clic en "Agregar configuración" y buscar la opción de "OneDrive" utilizando el buscador.
 
 
 ![OneDrive_AgregarConfiguracion](img/OneDrive_AgregarConfiguracion.png)
 
-En esta sección, debemos buscar las siguientes opciones:
+En esta sección, se deben buscar las siguientes opciones:
 
 - Silently move Windows known folders to OneDrive
 - Silently sign in users to the OneDrive sync app with their Windows credentials
@@ -52,12 +52,12 @@ En esta sección, debemos buscar las siguientes opciones:
 - Set the sync app update ring
 - Use OneDrive Files On-Demand
 
-Para configurar algunas de estas opciones, necesitaremos el **Tenant ID** de la organización. Para obtenerlo, simplemente accedemos al Active Directory y lo copiamos tal como se muestra en la imagen.
+Para configurar algunas de estas opciones, se requerirá el **ID de inquilino** (Tenant ID) de la organización. Para obtenerlo, simplemente se debe acceder al Active Directory y copiarlo tal como se muestra en la imagen.
 
 ![Tenant ID](img/OneDrive_Tenant_ID.png)
 
 
-A continuación, explicaré brevemente para qué sirve cada opción y cómo se configura.
+A continuación, se proporcionará una breve explicación de cada opción y cómo se configura:
 
 
 ## Silently move Windows known folders to OneDrive
@@ -67,7 +67,7 @@ Esta configuración permite la sincronización automática de las carpetas de Es
 
 ![Silently move](img/OneDrive_Silently_move.png)
 
-Es importante poner el Tenant ID para la sincronizacion ya que si no, no se van a sincronizar las carpetas.
+La inclusión del Tenant ID es fundamental para garantizar la sincronización adecuada de las carpetas. No proporcionar el Tenant ID puede ocasionar problemas en el proceso de sincronización.
 
 
 ## Silently sign in users to the OneDrive sync app with their Windows credentials
@@ -88,13 +88,11 @@ as actualizaciones de la aplicación de sincronización de OneDrive (OneDrive.ex
 Esta configuración te permite controlar si se habilita OneDrive Archivos bajo demanda para tu organización. Si habilitas esta configuración, OneDrive Archivos bajo demanda se activará de forma predeterminada. Si deshabilitas esta configuración, OneDrive Archivos bajo demanda se desactivará explícitamente y los usuarios no podrán activarlo. Si no configuras esta opción, los usuarios podrán activar o desactivar OneDrive Archivos bajo demanda.
 
 
-
-
-
 ------
-Una vez que hayamos completado la configuración, procedemos a hacer clic en "Siguiente" hasta que lleguemos a la sección de Tareas.
 
-Aquí, solo podremos asignar las directivas a grupos y no a usuarios específicos.
+
+
+Una vez completada la configuración, se debe hacer clic en "Siguiente" hasta llegar a la sección de Tareas. En esa sección, es posible asignar las directivas únicamente a grupos y no a usuarios específicos.
 
 ![Tareas](img/OneDrive_Tareas.png)
 
@@ -106,38 +104,47 @@ Al final del proceso, se mostrará un resumen detallado de todas las configuraci
 
 A continuación, se explicará cómo configurar automáticamente una unidad de SharePoint utilizando las directivas de Intune.
 
-**¡¡¡¡¡¡ ADVERTENCIA !!!!!!!**
+<span style="font-size:25px; color:red;"> **¡¡¡¡¡¡ ADVERTENCIA !!!!!!!**</span>
+```
+Lo primero que se debe tener en cuenta es que, por motivos desconocidos, estas directivas pueden tardar hasta 8 horas en aplicarse desde que el usuario inicia sesión en el equipo.
 
-lo primero que hay que saber es que por razones que desconozco estas directivas dardan 8 horas en aplicarse desde el que el usuario inicia sesion en el equipo.
+Mas adelante, explicaré un método para acelerar la aplicación de estas directivas.
+```
 
-luego explicare una manera de hacelerar la aplicacion de esta directiva.
 
-lo primero que tenemos que hacer es ir a nuestro directorio de sharepoit que queremos sincronizar y pulsar en sincronizar pero sin sincronizar el directorio, lo que queremos es que salga el siguiente mensaje 
+
+Lo primero que se debe tener en cuenta es que, por motivos desconocidos, estas directivas pueden tardar hasta 8 horas en aplicarse desde que el usuario inicia sesión en el equipo.
+
+Más adelante, explicaré un método para acelerar la aplicación de estas directivas.
+
+----
+
+El primer paso consiste en acceder al directorio de SharePoint que deseamos sincronizar y hacer clic en "Sincronizar" **sin completar la sincronización del directorio.** Lo que buscamos es que aparezca el siguiente mensaje:
 
 ![CrearUnPerfil](img/SharePoint_Sincronizar.png)
 
 Una vez aparezca dicho mensaje, se debe hacer clic en "Identificador de biblioteca" para copiar el código.
 
-Posteriormente, se procede a crear otra directiva, esta vez seleccionando el "Tipo de perfil" como "Plantillas". Dentro de las plantillas, se busca "Plantillas Administrativas".
+Posteriormente, se procede a crear una directiva, esta vez seleccionando el "Tipo de perfil" como "Plantillas". Dentro de las plantillas, se busca "Plantillas Administrativas".
 
 ![SharePoint_Plantillas](img/SharePoint_Plantillas.png)
 
-los primeros pasos son los mismos que en el paso anterior el cambio lo veremos cuando lleguemos a esta parte.
+Los primeros pasos son los mismos que en el paso anterior el cambio lo veremos cuando lleguemos a esta parte.
 
 ![SharePoint_Directiva](img/SharePoint_Directiva.png)
-aqui tenemos que buscar "Configurar bibliotecas del sitio de grupo para realizar la sincronización automática" es inportante que en tipo de configuracion ponga "Usuario" 
+En esta sección, se debe buscar la opción "Configurar bibliotecas del sitio de grupo para realizar la sincronización automática". Es importante seleccionar "Usuario" en el tipo de configuración.
 
-Al habilitar la configuración, notaremos que aparecerán dos campos debajo, denominados "Nombre" y "Valor". En el campo "Nombre", debemos ingresar un identificador descriptivo (este nombre no será el que se mantenga en la biblioteca). En el campo "Valor", pegaremos el "Identificador de biblioteca" que previamente hemos copiado.
+Al habilitar la configuración, se observará la aparición de dos campos: "Nombre" y "Valor". En el campo "Nombre", se debe ingresar un identificador descriptivo (este nombre no será el que se mantenga en la biblioteca). En el campo "Valor", se debe pegar el "Identificador de biblioteca" previamente copiado.
 
 ![Habilitado](img/SharePoint_Habilitado.png)
 
-Una vez completado este paso, simplemente hacemos clic en "OK" y seguimos los pasos anteriores para asignar esta configuración a grupos de usuarios.
+Una vez completado este paso, simplemente se debe hacer clic en "OK" y seguir los pasos anteriores para asignar esta configuración a grupos de usuarios.
 
-### Acelerar el proceso de sincronizacion
+### Acelerar el proceso de sincronización
 
 Para agilizar el proceso de sincronización, se utiliza un script de PowerShell llamado Sync-SharepointFolder.ps ubicado en la carpeta Scripts. Este script ha sido tomado prestado de https://github.com/tabs-not-spaces/CodeDump/blob/master/Sync-SharepointFolder/Sync-SharepointFolder.ps1. Al ejecutar este script, se sincronizará automáticamente la carpeta de SharePoint deseada.
 
-La sección del script que nos interesa es la siguiente:
+La sección del script relevante es la siguiente:
 ```
  $params = @{
         #replace with data captured from your sharepoint site.
@@ -150,32 +157,40 @@ La sección del script que nos interesa es la siguiente:
         listTitle = "FolderName"
     }
 ```
-para obtener estos datos los pasos son los siguientes:
+Para obtener estos datos, sigue los siguientes pasos:
 
-1. Abrimos el sitio de SharePoint que deseamos sincronizar.
-2. Presionamos la tecla F12 para abrir las "Herramientas de desarrollo" o "DevTools".
-3. Nos dirigimos al apartado de "Network" (Red).
-4. Hacemos clic en el botón "Detener la grabación de registro" para detener la captura de datos.
+Para obtener estos datos, sigue los siguientes pasos:
+
+1. Abre el sitio de SharePoint que deseas sincronizar.
+2. Presiona la tecla F12 para abrir las "Herramientas de desarrollo" o "DevTools".
+3. Dirígete al apartado de "Network" (Red).
+4. Haz clic en el botón "Detener la grabación de registro" para detener la captura de datos.
 ![Detener](img/SharePoint_MasRapido_Detener.png)
-5. Limpiamos todo el registro para mantenerlo más limpio.
+5. Limpia todo el registro para mantenerlo más limpio.
 ![Borrar](img/SharePoint_MasRapido_Borrar.png)
-6. Iniciamos el registro de red.
-7. Hacemos clic en el botón de sincronización en SharePoint.
-8. Cancelamos la sincronizacion
+6. Inicia el registro de red.
+7. Haz clic en el botón de sincronización en SharePoint.
+8. Cancela la sincronización.
 
-al hacer click en el boton de sincronizar se generaran unos paquetes
+
+Al hacer clic en el botón de sincronizar, se generarán una serie de paquetes.
+
 ![Datos](img/SharePoint_MasRapido_Datos.png)
-el paquete que nos interesa es el que empieza por **sync** si hacemos click en esa linea y vamos al apartado de payload podremos ver los datos que nos pide el script. 
+El paquete que nos interesa es aquel que comienza con **sync**. Al hacer clic en esa línea y dirigirnos al apartado de **payload**, podremos visualizar los datos que son requeridos por el script.
+
 ![Datos](img/SharePoint_MasRapido_Payload.png)
+
+Ahora, los datos solicitados en el script deben ser sustituidos y estará listo para su uso.
 
 ## Wi-Fi
 
-Para poder aplicar las credenciales de Wi-Fi tenemos que crear una nueva directiva de tipo Plantilla y selecionar Wi-Fi
+Para aplicar las credenciales de Wi-Fi, es necesario crear una nueva directiva de tipo Plantilla y seleccionar la opción de Wi-Fi.
 ![Wi-Fi_crear](img/Wi-Fi_perfil.png)
 
-al darle a crear el proceso es el mismo de siempre hasra llegar aqui
+Una vez que hayas seleccionado la opción de crear, el proceso será el mismo que antes hasta que llegues a esta etapa.
+
 ![Credencialesl](img/Wi-Fi_Credencialesl.png)
 
-aqui se aplican las configuraciones queremos aplicar y las credenciales del Wi-Fi.
+En esta sección, debes aplicar las configuraciones deseadas y proporcionar las credenciales del Wi-Fi correspondiente.
 
-Despues de esta pestaña todas las demas son igual que en los pasos anteriores menos la pestaña de **Reglas de aplicabilidad**. en este apartado se puede restringir o asignar tanto a la versinon del sistema operativo como a la Edicion del sistema operativo.
+A partir de esta pestaña, el resto de las pestañas son similares a los pasos anteriores, excepto por la pestaña de **Reglas de aplicabilidad**. En esta sección, tienes la opción de restringir o asignar la directiva en función de la versión del sistema operativo o la edición del sistema operativo.
