@@ -165,4 +165,4 @@ al darle a crear el proceso es el mismo de siempre hasra llegar aqui
 
 aqui se aplican las configuraciones queremos aplicar y las credenciales del Wi-Fi.
 
-Despues de esta pestaña todas las demas son igual que en los pasos anteriores.
+Despues de esta pestaña todas las demas son igual que en los pasos anteriores menos la pestaña de **Reglas de aplicabilidad**. en este apartado se puede restringir o asignar tanto a la versinon del sistema operativo como a la Edicion del sistema operativo.
