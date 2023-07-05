@@ -114,7 +114,38 @@ Una vez completado este paso, simplemente hacemos clic en "OK" y seguimos los pa
 
 ### Como acelerar el proceso
 
+Para agilizar el proceso de sincronización, se utiliza un script de PowerShell llamado Sync-SharepointFolder.ps ubicado en la carpeta Scripts. Este script ha sido tomado prestado de https://github.com/tabs-not-spaces/CodeDump/blob/master/Sync-SharepointFolder/Sync-SharepointFolder.ps1. Al ejecutar este script, se sincronizará automáticamente la carpeta de SharePoint deseada.
 
+La sección del script que nos interesa es la siguiente:
+```
+ $params = @{
+        #replace with data captured from your sharepoint site.
+        siteId    = "{00000000-0000-0000-0000-000000000000}"
+        webId     = "{00000000-0000-0000-0000-000000000000}"
+        listId    = "{00000000-0000-0000-0000-000000000000}"
+        userEmail = $userUpn
+        webUrl    = "https://example.sharepoint.com"
+        webTitle  = "Title"
+        listTitle = "FolderName"
+    }
+```
+para obtener estos datos los pasos son los siguientes:
+
+1. Abrimos el sitio de SharePoint que deseamos sincronizar.
+2. Presionamos la tecla F12 para abrir las "Herramientas de desarrollo" o "DevTools".
+3. Nos dirigimos al apartado de "Network" (Red).
+4. Hacemos clic en el botón "Detener la grabación de registro" para detener la captura de datos.
+![Detener](img/SharePoint_MasRapido_Detener.png)
+5. Limpiamos todo el registro para mantenerlo más limpio.
+![Borrar](img/SharePoint_MasRapido_Borrar.png)
+6. Iniciamos el registro de red.
+7. Hacemos clic en el botón de sincronización en SharePoint.
+8. Cancelamos la sincronizacion
+
+al hacer click en el boton de sincronizar se generaran unos paquetes
+![Datos](img/SharePoint_MasRapido_Datos.png)
+el paquete que nos interesa es el que empieza por **sync** si hacemos click en esa linea y vamos al apartado de payload podremos ver los datos que nos pide el script. 
+![Datos](img/SharePoint_MasRapido_Payload.png)
 
 ## Wi-Fi
 
