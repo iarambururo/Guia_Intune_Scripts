@@ -124,7 +124,6 @@ A continuación, se explicará cómo configurar automáticamente una unidad de S
 
 <span style="font-size:25px; color:red;"> **¡¡¡¡¡¡ ADVERTENCIA !!!!!!!**</span>
 
-**<font color="red">¡¡¡¡¡¡ ADVERTENCIA !!!!!!!</font>**
 
 Lo primero que se debe tener en cuenta es que, por motivos desconocidos, estas directivas pueden tardar hasta 8 horas en aplicarse desde que el usuario inicia sesión en el equipo.
 
