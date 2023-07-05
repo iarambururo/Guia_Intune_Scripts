@@ -122,7 +122,7 @@ Al final del proceso, se mostrará un resumen detallado de todas las configuraci
 
 A continuación, se explicará cómo configurar automáticamente una unidad de SharePoint utilizando las directivas de Intune.
 
-<span style="font-size:25px; color:red;"> **¡¡¡¡¡¡ ADVERTENCIA !!!!!!!**</span>
+### **¡¡¡¡¡¡ ADVERTENCIA !!!!!!!**
 
 
 Lo primero que se debe tener en cuenta es que, por motivos desconocidos, estas directivas pueden tardar hasta 8 horas en aplicarse desde que el usuario inicia sesión en el equipo.
