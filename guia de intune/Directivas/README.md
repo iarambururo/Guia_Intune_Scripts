@@ -1,5 +1,4 @@
 
-
 # **Directivas**
 
 En este documento, se proporciona una guía para configurar diferentes aspectos en los dispositivos utilizando las herramientas y directivas de Microsoft Intune. Se abordarán tres áreas principales: OneDrive, SharePoint y Wi-Fi.
@@ -13,14 +12,14 @@ Por último, se abordará la configuración de Wi-Fi, donde se mostrará cómo a
 A través de estas instrucciones detalladas, podrás optimizar la configuración de tus dispositivos y aprovechar al máximo las capacidades Microsoft Intune
 
 ## Indice
+
 - [ONE DRIVE](#one-drive)
 - [OneDrive Sharepoint](#onedrive-sharepoint)
-    - [Acelerar el proceso de sincronización](#acelerar-el-proceso-de-sincronizacion)
+  - [Acelerar el proceso de sincronización](#acelerar-el-proceso-de-sincronizacion)
 - [Wifi](#wi-fi)
 
-
 Dispositivos | Configuración
-https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration
+<https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration>
 
 ## ONE DRIVE
 
@@ -29,7 +28,7 @@ Para lograr la sincronización automática de OneDrive, es necesario aplicar las
   <img src="img/OneDrive_crearDirectiva.png" alt="crearDirectiva alternativo">
 </div>
 
-Al seleccionar "Crear Perfil", se abrirá una ventana emergente en la cual se deben especificar los siguientes detalles: 
+Al seleccionar "Crear Perfil", se abrirá una ventana emergente en la cual se deben especificar los siguientes detalles:
 
 En el campo **Plataforma**, se debe elegir "Windows 10 y versiones posteriores", y en el campo **Tipo de perfil**, se seleccionará "Catálogo de configuración".
 
@@ -44,9 +43,7 @@ En esta etapa, ingresamos el nombre con el que deseamos identificar la directiva
   <img src="img/OneDrive_nombrePerfil.png" alt="Nombre del Perfil">
 </div>
 
-
 Ahora es necesario hacer clic en "Agregar configuración" y buscar la opción de "OneDrive" utilizando el buscador.
-
 
 <div align="center">
   <img src="img/OneDrive_AgregarConfiguracion.png" alt="Agregar Configuración">
@@ -66,21 +63,17 @@ Para configurar algunas de estas opciones, se requerirá el **ID de inquilino** 
   <img src="img/OneDrive_Tenant_ID.png" alt="Tenant ID">
 </div>
 
-
 A continuación, se proporcionará una breve explicación de cada opción y cómo se configura:
-
 
 ## Silently move Windows known folders to OneDrive
 
 Esta configuración permite la sincronización automática de las carpetas de Escritorio, Documentos e Imágenes sin la intervención del usuario. Además, se puede mostrar una notificación para informar al usuario cuando estas carpetas se hayan sincronizado exitosamente.
-
 
 <div align="center">
   <img src="img/OneDrive_Silently_move.png" alt="Silently move">
 </div>
 
 La inclusión del Tenant ID es fundamental para garantizar la sincronización adecuada de las carpetas. No proporcionar el Tenant ID puede ocasionar problemas en el proceso de sincronización.
-
 
 ## Silently sign in users to the OneDrive sync app with their Windows credentials
 
@@ -94,15 +87,11 @@ Esta configuración te permite evitar que los usuarios suban fácilmente archivo
 
 as actualizaciones de la aplicación de sincronización de OneDrive (OneDrive.exe) se lanzan al público a través de tres anillos: primero, Insiders; luego, Production; y finalmente, Deferred. Esta configuración te permite especificar la versión de la aplicación de sincronización para los usuarios de tu organización. Cuando habilitas esta configuración y seleccionas un anillo, los usuarios no podrán cambiarlo. Los usuarios en el anillo Insiders recibirán versiones que les permiten obtener un avance de las nuevas funciones que llegarán a OneDrive. Los usuarios en el anillo Production recibirán las últimas características a medida que estén disponibles. Los usuarios en el anillo Deferred recibirán las nuevas funciones, correcciones de errores y mejoras de rendimiento en último lugar. Este anillo te permite implementar actualizaciones desde una ubicación de red interna y controlar el momento de la implementación (dentro de una ventana de 60 días). Si deshabilitas o no configuras esta configuración, los usuarios recibirán las actualizaciones de la aplicación de sincronización de OneDrive cuando estén disponibles en el anillo Production. Los usuarios pueden unirse a los programas Office o Windows Insiders para recibir actualizaciones en el anillo Insiders.
 
-
-
 ## Use OneDrive Files On-Demand (no es indispensable)
+
 Esta configuración te permite controlar si se habilita OneDrive Archivos bajo demanda para tu organización. Si habilitas esta configuración, OneDrive Archivos bajo demanda se activará de forma predeterminada. Si deshabilitas esta configuración, OneDrive Archivos bajo demanda se desactivará explícitamente y los usuarios no podrán activarlo. Si no configuras esta opción, los usuarios podrán activar o desactivar OneDrive Archivos bajo demanda.
 
-
 ------
-
-
 
 Una vez completada la configuración, se debe hacer clic en "Siguiente" hasta llegar a la sección de Tareas. En esa sección, es posible asignar las directivas únicamente a grupos y no a usuarios específicos.
 
@@ -110,20 +99,17 @@ Una vez completada la configuración, se debe hacer clic en "Siguiente" hasta ll
   <img src="img/OneDrive_Tareas.png" alt="Tareas">
 </div>
 
-
 Al final del proceso, se mostrará un resumen detallado de todas las configuraciones realizadas.
 
 <div align="center">
   <img src="img/OneDrive_Resumen.png" alt="Resumen">
 </div>
 
-
-## OneDrive Sharepoint 
+## OneDrive Sharepoint
 
 A continuación, se explicará cómo configurar automáticamente una unidad de SharePoint utilizando las directivas de Intune.
 
 ### **¡¡¡¡¡¡ ADVERTENCIA !!!!!!!**
-
 
 Lo primero que se debe tener en cuenta es que, por motivos desconocidos, estas directivas pueden tardar hasta 8 horas en aplicarse desde que el usuario inicia sesión en el equipo.
 
@@ -145,7 +131,6 @@ Posteriormente, se procede a crear una directiva, esta vez seleccionando el "Tip
   <img src="img/SharePoint_Plantillas.png" alt="Plantillas de SharePoint">
 </div>
 
-
 Los primeros pasos son los mismos que en el paso anterior el cambio lo veremos cuando lleguemos a esta parte.
 
 <div align="center">
@@ -160,14 +145,14 @@ Al habilitar la configuración, se observará la aparición de dos campos: "Nomb
   <img src="img/SharePoint_Habilitado.png" alt="Habilitado en SharePoint">
 </div>
 
-
 Una vez completado este paso, simplemente se debe hacer clic en "OK" y seguir los pasos anteriores para asignar esta configuración a grupos de usuarios.
 
 ### Acelerar el proceso de sincronización
 
-Para agilizar el proceso de sincronización, se utiliza un script de PowerShell llamado Sync-SharepointFolder.ps ubicado en la carpeta Scripts. Este script ha sido tomado prestado de https://github.com/tabs-not-spaces/CodeDump/blob/master/Sync-SharepointFolder/Sync-SharepointFolder.ps1. Al ejecutar este script, se sincronizará automáticamente la carpeta de SharePoint deseada.
+Para agilizar el proceso de sincronización, se utiliza un script de PowerShell llamado Sync-SharepointFolder.ps ubicado en la carpeta Scripts. Este script ha sido tomado prestado de <https://github.com/tabs-not-spaces/CodeDump/blob/master/Sync-SharepointFolder/Sync-SharepointFolder.ps1>. Al ejecutar este script, se sincronizará automáticamente la carpeta de SharePoint deseada.
 
 La sección del script relevante es la siguiente:
+
 ```
  $params = @{
         #replace with data captured from your sharepoint site.
@@ -180,6 +165,7 @@ La sección del script relevante es la siguiente:
         listTitle = "FolderName"
     }
 ```
+
 Para obtener estos datos, sigue los siguientes pasos:
 
 Para obtener estos datos, sigue los siguientes pasos:
@@ -188,11 +174,13 @@ Para obtener estos datos, sigue los siguientes pasos:
 2. Presiona la tecla F12 para abrir las "Herramientas de desarrollo" o "DevTools".
 3. Dirígete al apartado de "Network" (Red).
 4. Haz clic en el botón "Detener la grabación de registro" para detener la captura de datos.
+
 <div align="center">
   <img src="img/SharePoint_MasRapido_Detener.png" alt="Detener">
 </div>
 
 5. Limpia todo el registro para mantenerlo más limpio.
+
 <div align="center">
   <img src="img/SharePoint_MasRapido_Borrar.png" alt="Borrar">
 </div>
@@ -200,7 +188,6 @@ Para obtener estos datos, sigue los siguientes pasos:
 6. Inicia el registro de red.
 7. Haz clic en el botón de sincronización en SharePoint.
 8. Cancela la sincronización.
-
 
 Al hacer clic en el botón de sincronizar, se generarán una serie de paquetes.
 
@@ -214,7 +201,6 @@ El paquete que nos interesa es aquel que comienza con **sync**. Al hacer clic en
   <img src="img/SharePoint_MasRapido_Payload.png" alt="Payload">
 </div>
 
-
 Ahora, los datos solicitados en el script deben ser sustituidos y estará listo para su uso.
 
 ## Wi-Fi
@@ -225,13 +211,11 @@ Para aplicar las credenciales de Wi-Fi, es necesario crear una nueva directiva d
   <img src="img/Wi-Fi_perfil.png" alt="Wi-Fi_crear">
 </div>
 
-
 Una vez que hayas seleccionado la opción de crear, el proceso será el mismo que antes hasta que llegues a esta etapa.
 
 <div align="center">
   <img src="img/Wi-Fi_Credencialesl.png" alt="Credencialesl">
 </div>
-
 
 En esta sección, debes aplicar las configuraciones deseadas y proporcionar las credenciales del Wi-Fi correspondiente.
 
