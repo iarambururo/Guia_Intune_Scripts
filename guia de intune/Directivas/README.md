@@ -147,7 +147,7 @@ Al habilitar la configuración, se observará la aparición de dos campos: "Nomb
 
 Una vez completado este paso, simplemente se debe hacer clic en "OK" y seguir los pasos anteriores para asignar esta configuración a grupos de usuarios.
 
-### Acelerar el proceso de sincronización
+## Acelerar el proceso de sincronización
 
 Para agilizar el proceso de sincronización, se utiliza un script de PowerShell llamado Sync-SharepointFolder.ps ubicado en la carpeta Scripts. Este script ha sido tomado prestado de <https://github.com/tabs-not-spaces/CodeDump/blob/master/Sync-SharepointFolder/Sync-SharepointFolder.ps1>. Al ejecutar este script, se sincronizará automáticamente la carpeta de SharePoint deseada.
 
