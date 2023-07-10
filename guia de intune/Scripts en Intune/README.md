@@ -3,6 +3,8 @@
 
 Aquí se explicarán los pasos a seguir para agregar scripts en Intune para Windows 10 y versiones posteriores.
 
+Además de eso, en la carpeta de **Scripts** contiene una explicación completa de las funciones de los scripts que he creado. Estos scripts automatizan diversas tareas en Windows 10 y versiones posteriores, como la configuración de plantillas de Word, el botón de Word, los complementos de Excel y el fondo de Teams.
+
 ## **Pasos a seguir**
 
 Se debe abrir el Centro de administración de Microsoft Intune y luego acceder a Dispositivos -> Scripts. En la pantalla resultante, se debe pulsar en **Agregar**.
