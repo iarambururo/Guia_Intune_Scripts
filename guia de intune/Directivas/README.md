@@ -15,7 +15,7 @@ A través de estas instrucciones detalladas, podrás optimizar la configuración
 
 - [ONE DRIVE](#one-drive)
 - [OneDrive Sharepoint](#onedrive-sharepoint)
-  - [Acelerar el proceso de sincronización](#acelerar-el-proceso-de-sincronizacion)
+  - [Acelerar el proceso de sincronización](#acelerar-el-proceso-de-sincronización)
 - [Wifi](#wi-fi)
 
 Dispositivos | Configuración
