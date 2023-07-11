@@ -9,7 +9,7 @@ Se debe abrir el Centro de administración de Microsoft Intune y luego acceder a
 
 Al pulsar el botón de agregar, se presentarán dos desplegables, Plataformas y Perfil.
 
-en **Platarforma** selecionaremos "Windows 10, Windows 11 y versiones posteriores" y en **Perfil** "Reglas del Firewall de Microsoft Defender"
+en **Platarforma** selecionaremos "Windows 10, Windows 11 y Windows Server" y en **Perfil** "Reglas del Firewall de Microsoft Defender"
 
 ![Firewall Crear](img/Firewall_Crear.png)
 
