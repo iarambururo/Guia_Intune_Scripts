@@ -5,8 +5,8 @@ Aquí explicare que hacen los scripts:
 ## Indice
 
 - [botonWordDinaiz.ps1](#botonworddinaizps1)
-- [excelComplemento(NO FUNCIONA).ps1](#onedrive-sharepoint)
-  - [fondoTeams.ps1](#fondoteamsps1)
+- [excelComplemento(NO FUNCIONA).ps1](#excelcomplementono-funcionaps1)
+- [fondoTeams.ps1](#fondoteamsps1)
 - [plantillasDinaiz.ps1](#plantillasdinaizps1)
 
 ## botonWordDinaiz.ps1
