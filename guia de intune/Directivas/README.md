@@ -166,7 +166,6 @@ La sección del script relevante es la siguiente:
     }
 ```
 
-Para obtener estos datos, sigue los siguientes pasos:
 
 Para obtener estos datos, sigue los siguientes pasos:
 
