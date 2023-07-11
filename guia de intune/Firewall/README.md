@@ -1,6 +1,6 @@
 **Firewall Intune**
 ===
-En esta sección se explicará cómo configurar el Firewall mediante Intune.
+En esta sección se explicará cómo configurar el Firewall de Windows mediante Intune.
 
 ## **Pasos a seguir**
 
