@@ -217,5 +217,6 @@ Una vez que hayas seleccionado la opción de crear, el proceso será el mismo qu
 </div>
 
 En esta sección, debes aplicar las configuraciones deseadas y proporcionar las credenciales del Wi-Fi correspondiente.
+Una característica interesante de esta directiva es que al borrarla, todos los dispositivos que la tenían configurada olvidarán las credenciales de Wi-Fi.
 
 A partir de esta pestaña, el resto de las pestañas son similares a los pasos anteriores, excepto por la pestaña de **Reglas de aplicabilidad**. En esta sección, tienes la opción de restringir o asignar la directiva en función de la versión del sistema operativo o la edición del sistema operativo.
