@@ -24,6 +24,7 @@ Una vez se ha establecido el nombre y la descripción, aparecerá la siguiente p
 Al hacer clic en "Editar regla", se desplegará el siguiente menú:
 
 ![Firewall regla](img/Firewall_desplegable.png)
+
 Dentro de este menú desplegable, se pueden establecer varias configuraciones, pero en este caso nos centraremos en los siguientes aspectos:
 
 - **Habilitado**: Permite activar o desactivar la regla.
