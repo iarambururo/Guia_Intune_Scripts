@@ -1,6 +1,6 @@
 **Firewall Intune**
 ===
-En esta sección se explicará cómo configurar el Firewall mediante Intune.
+En esta sección se explicará cómo configurar el Firewall de Windows mediante Intune.
 
 ## **Pasos a seguir**
 
@@ -9,7 +9,7 @@ Se debe abrir el Centro de administración de Microsoft Intune y luego acceder a
 
 Al pulsar el botón de agregar, se presentarán dos desplegables, Plataformas y Perfil.
 
-en **Platarforma** selecionaremos "Windows 10, Windows 11 y versiones posteriores" y en **Perfil** "Reglas del Firewall de Microsoft Defender"
+en **Platarforma** selecionaremos "Windows 10, Windows 11 y Windows Server" y en **Perfil** "Reglas del Firewall de Microsoft Defender"
 
 ![Firewall Crear](img/Firewall_Crear.png)
 
@@ -24,6 +24,7 @@ Una vez se ha establecido el nombre y la descripción, aparecerá la siguiente p
 Al hacer clic en "Editar regla", se desplegará el siguiente menú:
 
 ![Firewall regla](img/Firewall_desplegable.png)
+
 Dentro de este menú desplegable, se pueden establecer varias configuraciones, pero en este caso nos centraremos en los siguientes aspectos:
 
 - **Habilitado**: Permite activar o desactivar la regla.

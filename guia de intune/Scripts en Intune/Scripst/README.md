@@ -31,7 +31,7 @@ La ruta de la configuracion esta en:
 C:\Users\$username\AppData\Local\Microsoft\Office\Word.officeUI
 ```
 
-## excelcomplementono-funcionaps1
+## excelcomplementono-funciona.ps1
 
  El siguiente script no funciona y no logro comprender la razón. Este script se encarga de agregar la ruta del complemento al registro de Windows.
 
