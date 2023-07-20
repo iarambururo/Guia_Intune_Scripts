@@ -17,6 +17,7 @@ A través de estas instrucciones detalladas, podrás optimizar la configuración
 - [OneDrive Sharepoint](#onedrive-sharepoint)
   - [Acelerar el proceso de sincronización](#acelerar-el-proceso-de-sincronización)
 - [Wifi](#wi-fi)
+- [Microsoft Edge Policy](#) 
 
 Dispositivos | Configuración
 <https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration>
@@ -220,3 +221,33 @@ En esta sección, debes aplicar las configuraciones deseadas y proporcionar las 
 Una característica interesante de esta directiva es que al borrarla, todos los dispositivos que la tenían configurada olvidarán las credenciales de Wi-Fi.
 
 A partir de esta pestaña, el resto de las pestañas son similares a los pasos anteriores, excepto por la pestaña de **Reglas de aplicabilidad**. En esta sección, tienes la opción de restringir o asignar la directiva en función de la versión del sistema operativo o la edición del sistema operativo.
+
+## Microsoft Edge Policy
+
+Para aplicar las políticas del navegador, se requiere la creación de una nueva directiva de tipo Plantilla y la selección de la opción "Plantillas Administrativas". Luego, será necesario buscar las siguientes opciones.
+Todos tienen que estar en Configuracion Usuario
+
+### Administrar motores de búsqueda
+
+```json
+[
+  {
+    "allow_search_engine_discovery": true
+  },
+  {
+    "is_default": true,
+    "suggest_url": "https://www.google.com/complete/search?client=firefox&q={searchTerms}",
+    "search_url": "https://www.google.com/search?q={searchTerms}",
+    "name": "Google",
+    "keyword": "google.com"
+  }
+]
+```
+### Configurar la dirección URL de la página principal
+
+Configurar la URL de la página principal predeterminada en Microsoft Edge.
+
+La página principal es la página que abre el botón Inicio. Las páginas que se abren al inicio se controlan mediante las directivas 'RestoreOnStartup' (Acción que se realizará al inicio).
+
+Puede establecer una dirección URL aquí o establecer la página principal para abrir la página de nueva pestaña. Si selecciona abrir la página de nueva pestaña, esta directiva no surtirá efecto.
+
