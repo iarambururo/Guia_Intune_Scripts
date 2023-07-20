@@ -1,1 +1,3 @@
 # Crear introducion
+
+Esta guía ofrece una explicación detallada sobre cómo configurar las directivas, los scripts y el firewall en Intune, con el objetivo de lograr una administración efectiva de la seguridad y el control en tus dispositivos. A través de instrucciones claras y prácticas, aprenderás a establecer políticas específicas, desplegar scripts personalizados y definir reglas de firewall para proteger y optimizar tus recursos de manera centralizada. Al dominar estas técnicas, podrás fortalecer la seguridad de tus dispositivos y mantener un control sólido sobre tu entorno de gestión en Intune.
