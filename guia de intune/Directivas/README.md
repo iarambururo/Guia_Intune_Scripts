@@ -17,7 +17,7 @@ A través de estas instrucciones detalladas, podrás optimizar la configuración
 - [OneDrive Sharepoint](#onedrive-sharepoint)
   - [Acelerar el proceso de sincronización](#acelerar-el-proceso-de-sincronización)
 - [Wifi](#wi-fi)
-- [Microsoft Edge Policy](#) 
+- [Microsoft Edge Policy](#microsoft-edge-policy) 
 
 Dispositivos | Configuración
 <https://endpoint.microsoft.com/#view/Microsoft_Intune_DeviceSettings/DevicesMenu/~/configuration>
