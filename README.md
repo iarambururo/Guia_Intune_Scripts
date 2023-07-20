@@ -1,0 +1,3 @@
+# Guia_Intune_Scripts
+
+Dentro de este repositorio, encontrarás guías detalladas que te ayudarán a configurar Intune y el servicio SMTP en una impresora Konica Minolta C227. Estas guías están diseñadas para proporcionarte instrucciones paso a paso, facilitando la implementación y optimización de ambas configuraciones. Con las guías disponibles, podrás sacar el máximo provecho de Intune para la administración de tus dispositivos, así como configurar el servicio SMTP en la impresora C227 para facilitar la impresión y escaneo a través del correo electrónico. ¡Explora el repositorio y aprovecha estas valiosas herramientas para mejorar la eficiencia y seguridad en tu entorno empresarial!
